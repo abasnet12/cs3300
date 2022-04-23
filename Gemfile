@@ -17,8 +17,10 @@ gem 'uglifier', '>= 1.3.0'
 gem 'mini_racer'
   
 gem 'devise'
+
 group :development, :test do
   gem 'rspec-rails', '~> 3.7'
+  gem 'factory_bot_rails' 
 end
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'
