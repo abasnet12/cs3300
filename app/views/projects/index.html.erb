@@ -5,7 +5,7 @@
 <table>
 
   <tbody>
-  <%= link_to 'Create New Project', new_project_path %>
+  <%= link_to 'Create Project', new_project_path %>
       <% @projects.each do |project| %>
         <tr>
           <% if user_signed_in? %>
@@ -18,7 +18,7 @@
                   <div class="card-body d-flex flex-column align-items-start">
                     <strong class="d-inline-block mb-2 text-primary">Title: <%=project.title %></strong>
                     <h3 class="mb-0">
-                      <a class="text-dark" href="#">Description:</a>
+                      <a class="text-dark" href="#">Description</a>
                     </h3>
                     <div class="mb-1 text-muted"><%= project.description %></div>
                     <p class="card-text mb-auto">This is a portfolio. <%= project.title %></p>
