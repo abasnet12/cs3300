@@ -47,7 +47,7 @@ RSpec.feature "Projects", type: :feature do
     end
 
     scenario "should fail" do
-      within("form") do
+      within(all("form")[1]) do
         fill_in "Description", with: ""
       end
       click_button "Update Project"
