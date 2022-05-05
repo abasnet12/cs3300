@@ -13,7 +13,7 @@ class ProjectsTest < ApplicationSystemTestCase
   test "creating a Project" do
     visit projects_url
     click_on "New Project"
-
+    
     fill_in "Description", with: @project.description
     fill_in "Title", with: @project.title
     click_on "Create Project"
